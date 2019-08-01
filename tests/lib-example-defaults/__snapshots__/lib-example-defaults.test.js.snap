@@ -965,8 +965,14 @@ const styles = StyleSheet.create({
 ",
   "* jsonfile.readFileSync jsonPath: ./react-native-alice-bobbi/example/package.json
 ",
-  "* jsonfile.writeFileSync path: ./react-native-alice-bobbi/example/package.json json {\\"name\\":\\"bogus\\",\\"scripts\\":[]} options {\\"spaces\\":2}
+  "* jsonfile.writeFileSync path: ./react-native-alice-bobbi/example/package.json json {\\"name\\":\\"bogus\\",\\"scripts\\":{\\"postinstall\\":\\"node ../scripts/examples_postinstall.js\\"}} options {\\"spaces\\":2}
 ",
+  Object {
+    "name": "bogus",
+    "scripts": Object {
+      "postinstall": "node ../scripts/examples_postinstall.js",
+    },
+  },
   "* execa.commandSync command: yarn add file:../ options: {\\"cwd\\":\\"./react-native-alice-bobbi/example\\",\\"stdio\\":\\"inherit\\"}
 ",
   "* execa.commandSync command: react-native link options: {\\"cwd\\":\\"./react-native-alice-bobbi/example\\",\\"stdio\\":\\"inherit\\"}

@@ -27,11 +27,12 @@ ${content}
     readFileSync: (jsonPath) => {
       mysnap.push(
         `* jsonfile.readFileSync jsonPath: ${jsonPath}\n`);
-      return { name: 'bogus', scripts: [] };
+      return { name: 'bogus', scripts: {} };
     },
     writeFileSync: (path, json, options) => {
       mysnap.push(
         `* jsonfile.writeFileSync path: ${path} json ${JSON.stringify(json)} options ${JSON.stringify(options)}\n`);
+      mysnap.push(json);
     },
   },
 });
