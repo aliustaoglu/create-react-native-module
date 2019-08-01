@@ -134,7 +134,6 @@ createLibraryModule({
   exampleReactNativeVersion: String, /* React Native version for the generated example project (Default: `react-native@0.59`) */
   fs: Object, /* Mockable `fs` object that should provide a few methods according to the `graceful-fs` package API - unstable and subject to change (Default: `require('graceful-fs')`) */
   execa: Object, /* Mockable `execa` object that should provide a `commandSync` method that is equivalent `require('execa').commandSync` or `require('child_process').execSync` - unstable and subject to change (Default: `require('execa')`
-  jsonfile: Object, /* Mockable `jsonfile` object that should provide synchronous `readFileSync` and `writeFileSync` methods acdording to the `jsonfile` package API (Default: `require('jsonfile')`) */
 }
 ```
 
