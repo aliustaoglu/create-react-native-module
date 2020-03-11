@@ -27,3 +27,12 @@ Temporary Items
 
 node_modules
 npm-debug.log
+yarn-error.log
+
+# Stryker mutator output
+.stryker-tmp
+reports
+stryker.log
+
+# CLI create integration test output to be ignored
+react-native-integration-*
